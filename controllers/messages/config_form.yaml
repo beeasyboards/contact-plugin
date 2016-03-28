@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Message
+
+# Model Form Field configuration
+form: $/beeasy/contact/models/message/fields.yaml
+
+# Model Class name
+modelClass: BeEasy\Contact\Models\Message
+
+# Default redirect location
+defaultRedirect: beeasy/contact/messages
+
+# Create page
+create:
+    title: Create Message
+    redirect: beeasy/contact/messages/update/:id
+    redirectClose: beeasy/contact/messages
+
+# Update page
+update:
+    title: Edit Message
+    redirect: beeasy/contact/messages
+    redirectClose: beeasy/contact/messages
+
+# Preview page
+preview:
+    title: Preview Message
